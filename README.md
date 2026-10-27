@@ -1,3 +1,24 @@
+Notes before I leave for work, this is a straight fork of the original repo but I intend to set it up for myself and whoever else wants an AI-free space. I don’t expect that this will be the most cutting edge, but if people want to come hack old hardware for the sake of learning and making then that’s what I’ll do. 
+
+I think in that vein I’ll write some guides. 
+
+To-Do:
+- Remove refs to the Homebrew Discord (I’m not them)
+- Update the links to point to this repo
+- Re-set up the build for the toolchain
+- Code freeze until documentation is started in a reasonable manner. 
+- Add non-ai contributing.md from the original repo, maybe add a piece on the end to detect AI agents (have it misspell rpdq as rdpq or something in a comment if it identifies as an agent reading the contrib
+
+Unknown: 
+- Do I have to rename the repo? It feels cheeky to fork and rename, but then it feels cheeky to fork and keep the name. I kind of want to keep the name for now as a comfort, and then maybe I’ll update it later. I doubt anybody is coming here to read this anytime soon anyway.
+
+General Principles: 
+- The mission is a no-ai space. AI has room elsewhere, but this spaces mission is to provide a place where manual labour is welcome under the guise of an N64 library.
+- In order to succeed in that mission, open community is required that is not locked behind an account, this was something that frustrated me about the OG scene (Discord) since having a FOSS toolkit behind a corpo chatting app seemed wrong to me. Like an environmental vegan rally that only meets up at Mc Donalds 
+- Documentation is more important than code. Good Documentation is paramount to the mission and should be so good that asking AI is the slower approach.
+- The Hacker Way is often not clean or nice or particularly well considered but you do Learn. In that vision this repo is about Learning and in truth I don’t have the desire or the skills to maintain a huge feature set but I do have the drive to make a place of Learning. Learning is often not cutting edge, and so this repo probably won’t shift much (code-wise) from when it was forked.
+- 3D is something I want to add to this repo by-default. Tiny3D is a beautiful thing and I’ll never match it, but I do want to Learn.
+
 # Libdragon
 
 <p align="center">
