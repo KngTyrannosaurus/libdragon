@@ -121,7 +121,7 @@ jobs:
           echo "Removing un-necessary content"
           rm -rf ${N64_INST}/share/locale/*
         continue-on-error: true
-
+      
       # https://fpm.readthedocs.io/en/v1.15.0/getting-started.html
       # TODO: add --deb-changelog with versions (like we do in release)
       - name: Generate toolchain packages for Linux based OS
@@ -167,6 +167,24 @@ jobs:
             --maintainer "$Package_Maintainer" \
             $Package_Source_Directory=$Package_Installation_Directory/ \
             $Package_Name-env.sh=/etc/profile.d/$Package_Name-env.sh
+
+
+          echo Generating solaris package
+          fpm \
+            -t solaris \
+            -s dir \
+            -p $Package_Name-$Package_Rpm_Architecture.srv4 \
+            --name $Package_Name \
+            --license $Package_License \
+            --version $Package_Version.$Package_Revision \
+            --architecture $Package_Rpm_Architecture \
+            --description "$Package_Description" \
+            --url "$Package_Url" \
+            --maintainer "$Package_Maintainer" \
+            $Package_Source_Directory=$Package_Installation_Directory/ \
+            $Package_Name-env.sh=/etc/profile.d/$Package_Name-env.sh
+
+            
         continue-on-error: true
         env:
           Package_Source_Directory: ${{ runner.temp }}/${{ env.Install_Directory }}/
